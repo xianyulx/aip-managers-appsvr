@@ -1,0 +1,15 @@
+<html>
+<head><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script></head>
+<body>测试Get</body>
+</html>
+<script>
+    $(function(){
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.0.114:8099/api/roles",
+            success: function(msg){
+                alert( "Data: " + msg );
+            }
+        });
+    })
+</script>
